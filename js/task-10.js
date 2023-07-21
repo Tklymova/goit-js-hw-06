@@ -14,6 +14,13 @@ createButton.addEventListener ("click", ClickCreate);
 destroyButton.addEventListener ("click", clickDestroy);
 
 
+
+function ClickCreate (){
+  const inputVal=Number(inputElement.value);
+  boxElement.innerHTML="";
+  boxCreate(inputVal);
+}
+
 function clickDestroy (){
 
   boxElement.innerHTML="";
@@ -22,11 +29,7 @@ function clickDestroy (){
 
 }
 
-function ClickCreate(){
-  const inputVal=Number(inputElement.value);
-  boxElement.innerHTML="";
-  boxCreate(inputVal)
-}
+
 
 function boxCreate(amount){
 
@@ -36,14 +39,14 @@ function boxCreate(amount){
 for (let i = 0; i < amount; i+=1) {
 
   const box = document.createElement("div");
-  box.style.width="${boxWidth}px"
-  box.style.height="${boxHeigth}px"
+  box.style.width=`${boxWidth}px`;
+  box.style.height=`${boxHeigth}px`;
   box.style.background=getRandomHexColor();
   arrBox.push(box);
   boxWidth+=10;
   boxHeigth+=10;
 }
-boxElement.append (...arrBox)
+boxElement.append(...arrBox);
 }
 
 
