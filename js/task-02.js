@@ -6,14 +6,14 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-const ulEL=document.createElement ("ul");
+const ulel=document.createElement ("ul");
 for (const ingredient of ingredients) {
-  const liEL=document.createElement ("li");
-  liEL.textContent=ingredient;
-  liEL.className="item"
-  ulEL.appendChild(liEL)
+  const liel=document.createElement ("li");
+  liel.textContent=ingredient;
+  liel.className="item"
+  ulel.appendChild(liel)
   }
-document.body.appendChild(ulEL)
+document.body.appendChild(ulel)
 
 
 

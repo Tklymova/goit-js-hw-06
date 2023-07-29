@@ -17,10 +17,11 @@ const images = [
 
 const fragment=document.querySelector(".gallery");
 
-const GalleryCard = ({ url, alt } = {}) => {
-    return `<li class="js-item"><img class="js-image" src="${url}" alt="${alt}"></li>`;
+const gallerycard = ({ url, alt } = {}) => {
+    return `<li class="js-item"><img class="js-image" src="${url}" alt="${alt}" width="320"></li>`;
    };
   
-  const galleryLi = images.map(GalleryCard).join('');
+  const galleryli = images.map(gallerycard).join('');
   
-  fragment.insertAdjacentHTML('beforeend', galleryLi);
+  fragment.insertAdjacentHTML('beforeend', galleryli);
+

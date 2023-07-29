@@ -1,14 +1,16 @@
-const inputEl = document.querySelector('#name-input');
-const outputEl = document.querySelector('#name-output');
+const inputel = document.querySelector('#name-input');
+const outputel = document.querySelector('#name-output');
 
 const inputHandle = () => {
-    if (inputEl.value.length > 0) {
-        outputEl.textContent = inputEl.value;
+
+    // outputEl.textContent = event.target.value || 'Anonymous'
+    if (inputel.value.length > 0) {
+        outputel.textContent = inputel.value;
         // return;
     } else {
-        outputElement.textContent = 'Anonymous';
+        outputel.textContent = 'Anonymous';
     }
 
  }
 
-inputEl.addEventListener('input', inputHandle);
+inputel.addEventListener('input', inputHandle);

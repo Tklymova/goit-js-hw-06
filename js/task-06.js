@@ -1,15 +1,15 @@
-const validationInputElement = document.querySelector('#validation-input');
+const validationInputelement = document.querySelector('#validation-input');
 
 
-const checkNumbers = () => {
-    if (validationInputElement.value.length === Number(validationInputElement.dataset.length)) {
-        validationInputElement.classList.remove(`invalid`);
-        validationInputElement.classList.add(`valid`);
+const checknumbers = () => {
+    if (validationInputelement.value.length === Number(validationInputelement.dataset.length)) {
+        validationInputelement.classList.remove(`invalid`);
+        validationInputelement.classList.add(`valid`);
         return;
     } else {
-        validationInputElement.classList.remove(`valid`);
-        validationInputElement.classList.add(`invalid`);
+        validationInputelement.classList.remove(`valid`);
+        validationInputelement.classList.add(`invalid`);
     };
 }
 
-validationInputElement.addEventListener('blur', checkNumbers);
+validationInputelement.addEventListener('blur',checknumbers);

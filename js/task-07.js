@@ -1,10 +1,10 @@
-const inputControlElement = document.querySelector('#font-size-control');
-const textElement = document.querySelector('#text');
+const inputcontrolelement = document.querySelector('#font-size-control');
+const textelement = document.querySelector('#text');
 
-textElement.style.fontSize = inputControlElement.value + 'px';
+textelement.style.fontSize = inputcontrolelement.value + 'px';
 
-const textResizing = () => {
-    textElement.style.fontSize = `${inputControlElement.value}px`;
+const textresizing = () => {
+    textelement.style.fontSize = `${inputcontrolelement.value}px`;
 }
 
-inputControlElement.addEventListener('input', textResizing);
+inputControlElement.addEventListener('input',textresizing);

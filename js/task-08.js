@@ -1,15 +1,15 @@
-const FormLog=document.querySelector (".login-form");
-FormLog.addEventListener ("submit", pressSubmit);
+const formlog=document.querySelector (".login-form");
+formlog.addEventListener ("submit",pressSubmit);
 function pressSubmit (event) {
     event.preventDefault();
   const infoObject=  {
-    email:FormLog.elements.email.value,
-    password:FormLog.elements.password.value,
+    email:formlog.elements.email.value,
+    password:formlog.elements.password.value,
     
   }
   if (infoObject.email==="" || infoObject.password==="" ) {
     return alert `Please fill in all fields`
   }
     console.log (infoObject);
-    FormLog.requestFullscreen();
+    // FormLog.requestFullscreen();
 }
