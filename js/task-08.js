@@ -12,4 +12,6 @@ function pressSubmit (event) {
   }
     console.log (infoObject);
     // FormLog.requestFullscreen();
+    event.currentTarget.reset();
 }
+
